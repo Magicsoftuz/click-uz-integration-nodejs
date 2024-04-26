@@ -1,4 +1,4 @@
-export const ClickError = {
+const ClickError = {
   Success: 0,
   SignFailed: -1,
   InvalidAmount: -2,
@@ -10,13 +10,19 @@ export const ClickError = {
   TransactionCanceled: -9,
 };
 
-export const ClickAction = {
+const ClickAction = {
   Prepare: 0,
   Complete: 1,
 };
 
-export const TransactionStatus = {
+const TransactionStatus = {
   Pending: "PENDING",
   Paid: "PAID",
   Canceled: "CANCELED",
+};
+
+module.exports = {
+  ClickError,
+  ClickAction,
+  TransactionStatus,
 };
