@@ -5,7 +5,6 @@
 ```bash
 $ yarn
 ```
-
 ## Running the app
 
 ```bash
