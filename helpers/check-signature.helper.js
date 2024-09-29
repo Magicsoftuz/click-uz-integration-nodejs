@@ -2,7 +2,7 @@ const crypto = require("crypto");
 
 const environments = require("../config/environments");
 
-export const checkClickSignature = (data, signString) => {
+const checkClickSignature = (data, signString) => {
   const {
     transId,
     serviceId,
@@ -12,7 +12,7 @@ export const checkClickSignature = (data, signString) => {
     action,
     signTime,
   } = data;
-
+  module.exports = { checkClickSignature };
   const CLICK_SECRET_KEY = environments.CLICK_SECRET_KEY;
 
   const prepareId = merchantPrepareId || "";
